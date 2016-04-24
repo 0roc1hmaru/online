@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'Ubuntu-medium';
+    src: url('../fonts/ubuntu-f/Ubuntu-M.ttf');
+    src: url('../fonts/ubuntu-f/Ubuntu-M.eot');
+    src: url('../fonts/ubuntu-f/Ubuntu-M.otf');
+    src: url('../fonts/ubuntu-f/Ubuntu-M.svg');
+    src: url('../fonts/ubuntu-f/Ubuntu-M.woff');
+}
+
+@font-face {
+    font-family: 'Ubuntu-light';
+    src: url('../fonts/ubuntu-f/Ubuntu-L.eot');
+    src: url('../fonts/ubuntu-f/Ubuntu-L.otf');
+    src: url('../fonts/ubuntu-f/Ubuntu-L.svg');
+    src: url('../fonts/ubuntu-f/Ubuntu-L.ttf');
+    src: url('../fonts/ubuntu-f/Ubuntu-L.woff');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu-f/Ubuntu-R.eot');
+    src: url('../fonts/ubuntu-f/Ubuntu-R.otf');
+    src: url('../fonts/ubuntu-f/Ubuntu-R.svg');
+    src: url('../fonts/ubuntu-f/Ubuntu-R.ttf');
+    src: url('../fonts/ubuntu-f/Ubuntu-R.woff');
+}
+
+@font-face {
+    font-family: 'helvetican-neue_light';
+    src: url('../fonts/helvetic/helveticaneuecyr-light.eot');
+    src: url('../fonts/helvetic/helveticaneuecyr-light.otf');
+    src: url('../fonts/helvetic/helveticaneuecyr-light.svg');
+    src: url('../fonts/helvetic/helveticaneuecyr-light.ttf');
+    src: url('../fonts/helvetic/helveticaneuecyr-light.woff');
+}
+
+@font-face {
+    font-family: 'helvetica-neue_bold';
+    src: url('../fonts/helvetic/helveticaneuecyr-bold.eot');
+    src: url('../fonts/helvetic/helveticaneuecyr-bold.otf');
+    src: url('../fonts/helvetic/helveticaneuecyr-bold.svg');
+    src: url('../fonts/helvetic/helveticaneuecyr-bold.ttf');
+    src: url('../fonts/helvetic/helveticaneuecyr-bold.woff');
+}
+
+@font-face {
+    font-family: 'helvetica-neue';
+    src: url('../fonts/helvetic/helveticaneuecyr-roman.eot');
+    src: url('../fonts/helvetic/helveticaneuecyr-roman.otf');
+    src: url('../fonts/helvetic/helveticaneuecyr-roman.svg');
+    src: url('../fonts/helvetic/helveticaneuecyr-roman.ttf');
+    src: url('../fonts/helvetic/helveticaneuecyr-roman.woff');
+}
+
+body {
+    background-color: #242f64;
+    height: auto;
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    width: 1140px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.wrapp-top {
+    background: #243173 url(../image/circles.png) no-repeat bottom center;
+    height: 770px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.leng {
+    width: 94px;
+    height: 36px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    background-color: #243274;
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+    font-family: 'helvetican-neue_light';
+    opacity: 0.7;
+}
+
+.dropdown {
+    float: right;
+    margin-top: -40px;
+}
+
+.lenguage {
+    font-family: 'helvetica-neue'
+}
+
+.arrow-dw {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main {
+    width: 1140px;
+    margin: auto;
+}
+
+.face-link {
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    width: 215px;
+    line-height: 2.5;
+}
+
+.btn-txt {
+    font-family: 'Ubuntu-medium';
+    font-size: 85%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.latter-btn {
+    float: left;
+    margin: 0 15px 0 10px;
+}
+
+.sociality-web {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.Google {
+    background-color: #e0463a;
+}
+
+.Twitter {
+    background-color: #55acee;
+}
+
+.Facebook {
+    background-color: #3b5998;
+}
+
+.text-about {
+    font-size: 125%;
+    font-family: 'Ubuntu-light';
+    line-height: 30px;
+    color: #ffffff;
+    opacity: 0.7;
+    line-height: 1.667;
+}
+
+.text-content {
+    margin-top: 75px;
+}
+
+.apple-store {
+    border: none;
+    border-radius: 5px;
+    z-index: 13;
+    float: right;
+    margin-right: 11%;
+    position: relative;
+    top: 50px;
+}
+
+.t-phone {
+    background: url(../image/phones.png) no-repeat bottom center;
+    background-size: contain;
+    width: 744px;
+    height: 435px;
+    display: block;
+    margin: 0 auto;
+    /* padding-top: 145px;*/
+}
+
+.microsoft-market {
+    border-radius: 10px;
+    border: none;
+    opacity: 0.5;
+    float: left;
+    position: relative;
+    top: 50px;
+    margin-left: 11%;
+}
+
+.question {
+    font-family: 'Ubuntu-medium';
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.How-it_work {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.answers {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.beacon-img {
+    background-image: url(../image/ibeacon.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 209px;
+    display: block;
+    margin: 0 auto;
+}
+
+.img {
+    margin: 0 auto;
+}
+
+.head-answer {
+    font-size: 187.5%;
+    font-family: "Ubuntu-medium";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.answers-text {
+    font-size: 125%;
+    font-family: 'Ubuntu';
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    opacity: 0.7;
+    margin-bottom: 50px
+}
+
+.dropdown-menu {
+    margin: 3px 10px;
+}
+
+.sprits {
+    background-image: url(../image/spritesheet%20.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-F {
+    width: 9px;
+    height: 20px;
+    margin: 6px 0 0 10px;
+    background-position: -10px -10px;
+}
+
+.sprite-T {
+    width: 21px;
+    height: 17px;
+    margin: 6px 0 0 10px;
+    background-position: -84px -10px;
+}
+
+.sprite-G {
+    width: 25px;
+    height: 16px;
+    margin: 6px 0 0 10px;
+    background-position: -39px -10px;
+}
+
+.sprite-logo_name {
+    width: 151px;
+    height: 42px;
+    background-position: -1079px -10px;
+}
+
+.sprite-arrow_donw {
+    width: 8px;
+    height: 4px;
+    background-position: -275px -10px;
+}
+
+.sprite-win_market {
+    width: 116px;
+    height: 42px;
+    background-position: -2263px -10px;
+}
+
+.sprite-play_mark {
+    width: 130px;
+    height: 38px;
+    background-position: -1873px -10px;
+}
+
+.sprite-app_store {
+    width: 130px;
+    height: 38px;
+    background-position: -125px -10px;
+}
+
+.sprite-ibeacon {
+    width: 209px;
+    height: 200px;
+    background-position: -523px -10px;
+}
+
+.sprite-explore {
+    width: 200px;
+    height: 200px;
+    background-position: -303px -10px;
+}
+
+.sprite-share {
+    width: 220px;
+    height: 203px;
+    background-position: -2023px -10px;
+}
+
+.google-play {
+    border-radius: 10px;
+    border: none;
+    z-index: 12;
+    display: block;
+    margin: auto;
+}
+
+.sprite-nexus6 {
+    width: 307px;
+    height: 560px;
+    background-position: -1250px -10px;
+    z-index: 20;
+}
+
+.sprite-nokia_opasity {
+    width: 276px;
+    height: 507px;
+    background-position: -1577px -10px;
+    z-index: 19;
+    margin-top: 40px;
+}
+
+.sprite-aplle {
+    width: 307px;
+    height: 545px;
+    background-position: -752px -10px;
+    z-index: 19;
+    margin-top: 40px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.t-phones {
+    background-image: url(../image/phones.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 540px;
+    text-align: center;
+}
+
+.markets {
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+
+@media(max-width:1200px) {
+    .header,
+    .main {
+        width: 1000px;
+    }
+}
+
+@media(max-width:999px) {
+    .header,
+    .main {
+        width: auto;
+        padding: 0 20px;
+    }
+    .header {
+        padding-top: 40px;
+    }
+}
+
+@media(max-width:767px) {
+    .t-phone {
+        width: auto;
+        padding-bottom: 20px;
+        /*    margin: 12%;*/
+    }
+    .markets {
+        top: 20px;
+    }
+    .face-link {
+        display: block;
+        margin: 0 auto 25px;
+    }
+    .t-phone {
+        background: none;
+        height: auto;
+    }
+    .google-play,
+    .apple-store,
+    .microsoft-market {
+        display: block;
+        float: none;
+        margin: 0 auto 20px;
+        top: 0;
+    }
+    .text-content {
+        margin-top: 20px
+    }
+    .wrapp-top {
+        height: auto;
+    }
+}
+
+@media(max-width:425px) {
+    .dropdown {
+        margin: 20px 0 0 0;
+        float: none;
+        text-align: center;
+    }
+    .list-item {
+        text-align: center;
+    }
+}

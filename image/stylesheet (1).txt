@@ -1,0 +1,109 @@
+.sprite {
+    background-image: url(spritesheet.png);
+
+background-repeat: no-repeat;
+    display: block;
+
+}    
+
+.sprite-F {
+    width: 9px;
+    height: 20px;
+   background-position: -10px -10px;
+}
+
+
+.sprite-G {
+    width: 25px;
+    height: 16px;
+    background-position: -39px -10px;
+}
+
+
+.sprite-T {
+    width: 21px;
+    height: 17px;
+    background-position: -84px -10px;
+}
+.sprite-app-store {
+    width: 130px;
+    height: 38px;
+    background-position: -125px -10px;
+}
+
+
+.sprite-arrow-donw {
+    width: 8px;
+    height: 4px;
+    background-position: -275px -10px;
+}
+
+
+.sprite-explore {
+    width: 200px;
+    height: 200px;
+    background-position: -303px -10px;
+}
+
+
+.sprite-ibeacon {
+    width: 209px;
+    height: 200px;
+    background-position: -523px -10px;
+}
+
+
+.sprite-iphone {
+    width: 307px;
+    height: 545px;
+    background-position: -752px -10px;
+}
+
+
+.sprite-logo-name {
+    width: 151px;
+    height: 42px;
+    background-position: -1079px -10px;
+}
+
+
+.sprite-nexus6 {
+    width: 307px;
+    height: 560px;
+    background-position: -1250px -10px;
+}
+
+
+.sprite-nokia-opasity {
+    width: 276px;
+    height: 507px;
+    background-position: -1577px -10px;
+}
+
+
+.sprite-play-mark {
+    width: 130px;
+    height: 38px;
+    background-position: -1873px -10px;
+}
+
+
+.sprite-share {
+    width: 220px;
+    height: 203px;
+    background-position: -2023px -10px;
+}
+
+
+.sprite-win-market {
+    width: 116px;
+    height: 42px;
+    background-position: -2263px -10px;
+}
+
+
+.sprite-wp-phone {
+    width: 276px;
+    height: 507px;
+    background-position: -2399px -10px;
+}
