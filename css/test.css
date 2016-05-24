@@ -65,11 +65,11 @@ p {
     width: 1140px;
     margin: auto;
     padding-top: 40px;
+    text-align: center;
 }
 
 .wrapp-top {
     background: #243173 url(../image/circles.png) no-repeat bottom center;
-    height: 770px;
     overflow: hidden;
     display: block;
     position: relative;
@@ -77,8 +77,8 @@ p {
 }
 
 .leng {
-    width: 94px;
-    height: 36px;
+    width: 100px;
+    height: 40px;
     border: 1px solid gray;
     border-radius: 30px;
     background-color: #243274;
@@ -86,12 +86,11 @@ p {
     color: white;
     padding-left: 20px;
     font-family: 'helvetican-neue_light';
-    opacity: 0.7;
 }
 
 .dropdown {
     float: right;
-    margin-top: -40px;
+    margin: -50px 0 0 0;
 }
 
 .lenguage {
@@ -113,7 +112,7 @@ p {
     border-radius: 30px;
     margin-left: 20px;
     width: 215px;
-    line-height: 2.5;
+    line-height: 3;
 }
 
 .btn-txt {
@@ -150,43 +149,65 @@ p {
     font-family: 'Ubuntu-light';
     line-height: 30px;
     color: #ffffff;
-    opacity: 0.7;
     line-height: 1.667;
-   
 }
 
 .text-content {
     margin-top: 75px;
 }
 
+.microsoft-market {
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    margin: 0 auto;
+    float: left;
+    left: 60px;
+    top: 30px;
+}
+
+.google-play {
+    border-radius: 10px;
+    border: none;
+    z-index: 12;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
 .apple-store {
     border: none;
     border-radius: 5px;
     z-index: 13;
-    float: right;
-    margin-right: 11%;
+    margin: 0 auto;
     position: relative;
-    top: 50px;
+    float: right;
+    right: 60px;
+    top: 30px;
+}
+
+.carousel {
+    display: none;
 }
 
 .t-phone {
     background: url(../image/phones.png) no-repeat bottom center;
     background-size: contain;
-    width: 744px;
-    height: 435px;
+    height: 335px;
+    width: 693px;
     display: block;
     margin: 0 auto;
-    /* padding-top: 145px;*/
 }
 
-.microsoft-market {
-    border-radius: 10px;
-    border: none;
-    opacity: 0.5;
-    float: left;
+.t-phones {
+    text-align: center;
+    margin: 150px 0 0 0;
+}
+
+.markets {
+    text-align: center;
     position: relative;
-    top: 50px;
-    margin-left: 11%;
+    margin: 90px auto 0;
 }
 
 .question {
@@ -234,8 +255,8 @@ p {
     color: #ffffff;
     text-align: center;
     line-height: 1.2;
-    opacity: 0.7;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .dropdown-menu {
@@ -251,21 +272,21 @@ p {
 .sprite-F {
     width: 9px;
     height: 20px;
-    margin: 6px 0 0 10px;
+    margin: 10px 0 0 10px;
     background-position: -10px -10px;
 }
 
 .sprite-T {
     width: 21px;
     height: 17px;
-    margin: 6px 0 0 10px;
+    margin: 10px 0 0 10px;
     background-position: -84px -10px;
 }
 
 .sprite-G {
     width: 25px;
     height: 16px;
-    margin: 6px 0 0 10px;
+    margin: 10px 0 0 10px;
     background-position: -39px -10px;
 }
 
@@ -317,14 +338,6 @@ p {
     background-position: -2023px -10px;
 }
 
-.google-play {
-    border-radius: 10px;
-    border: none;
-    z-index: 12;
-    display: block;
-    margin: auto;
-}
-
 .sprite-nexus6 {
     width: 307px;
     height: 560px;
@@ -348,22 +361,48 @@ p {
     margin-top: 40px;
 }
 
-.logo {
-    text-align: center;
-}
-
-.t-phones {
-    background-image: url(../image/phones.png);
+.sprite-t_phone {
+    background-image: url(../image/t-phone.png);
     background-repeat: no-repeat;
     display: block;
-    height: 540px;
-    text-align: center;
 }
 
-.markets {
-    text-align: center;
+.sprite-iphone {
+    width: 240px;
+    height: 248px;
+    background-position: -5px -5px;
+    display: inline-block;
     position: relative;
-    top: 70px;
+    right: 35px;
+    z-index: 1;
+    top: 47px;
+}
+
+.sprite-nexus_6 {
+    width: 281px;
+    height: 284px;
+    background-position: -255px -5px;
+    display: inline-block;
+    z-index: 5;
+    position: relative;
+}
+
+.sprite-wp {
+    width: 254px;
+    height: 239px;
+    background-position: -546px -5px;
+    display: inline-block;
+    position: relative;
+    left: 55px;
+    z-index: 1;
+    top: 47px;
+}
+
+
+/*.sprite-wp:hover*/
+
+.sprite-iphone:hover {
+    z-index: 10;
 }
 
 @media(max-width:1200px) {
@@ -385,28 +424,28 @@ p {
 }
 
 @media(max-width:767px) {
-    .t-phone {
-        width: auto;
-        padding-bottom: 20px;
-        /*    margin: 12%;*/
-    }
-    .markets {
+    /* .markets {
         top: 20px;
-    }
+        width: auto;
+        display: block;
+    }*/
     .face-link {
         display: block;
         margin: 0 auto 25px;
     }
     .t-phone {
-        background: none;
-        height: auto;
+        width: auto;
+        /*   background: none;*/
+        padding-bottom: 20px;
     }
     .google-play,
     .apple-store,
     .microsoft-market {
         display: block;
-        float: none;
-        margin: 0 auto 20px;
+        /* float: none;*/
+        padding: 40px auto 40px;
+    }
+    .apple-store {
         top: 0;
     }
     .text-content {
@@ -417,13 +456,81 @@ p {
     }
 }
 
+@media (max-width:550px) {
+    .t-phone {
+        display: none;
+    }
+    .android {
+        background: url(../image/nexus_6.png) no-repeat bottom center;
+        height: 284px;
+        width: 281px;
+        display: block;
+        margin: 0 auto;
+    }
+    .google-play {
+        margin: 20px auto;
+    }
+    .apple {
+        background: url(../image/iphone.png) no-repeat bottom center;
+        height: 284px;
+        width: 240px;
+        display: block;
+        margin: 0 auto;
+    }
+    .windows {
+        background: url(../image/wp.png) no-repeat bottom center;
+        display: block;
+        margin: 0 auto;
+        height: 284px;
+        width: 254px;
+    }
+    .apple-store {
+        margin: 0 auto;
+        position: relative;
+        float: none;
+        margin: 20px auto;
+        right: 0;
+        /*right: 60px;
+        top: 30px;*/
+    }
+    .microsoft-market {
+        position: relative;
+        margin: 20px auto;
+        float: none;
+        left: 0;
+        /*top: 30px;*/
+    }
+    .carousel {
+        display: block;
+    }
+    .carousel-control.right,
+    .carousel-control.left {
+        background-image: none;
+    }
+    .soon-add {
+        font-size: 24px;
+        font-family: 'helvetica-neue_bold';
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.25;
+        font-style: bold;
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 45px;
+    }
+}
+
+}
 @media(max-width:425px) {
     .dropdown {
         margin: 20px 0 0 0;
         float: none;
         text-align: center;
     }
+    
     .list-item {
         text-align: center;
     }
 }
+

@@ -6,21 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/test.css">
 
-
-    <title>Onlinic</title>
-
+    <title>Onlinico</title>
 
 </head>
 
 <body>
     <div class="wrapp-top">
         <header class="header">
-            <div class="logo"><i class="sprits sprite-logo_name"></i></div>
+            <div><i class="sprits sprite-logo_name"></i></div>
             <div class="dropdown">
-                <button class="dropdown-toggle leng" type="button" data-toggle="dropdown">Eng<i class="sprits sprite-arrow_donw arrow-dw"></i>
-                </button>
+                <button class="dropdown-toggle leng" type="button" data-toggle="dropdown">Eng<i class="sprits sprite-arrow_donw arrow-dw"></i></button>
                 <ul class="list-item dropdown-menu" role="menu">
                     <li class="lenguage text-center"><a href="#">English</a></li>
                     <li class="lenguage text-center"><a href="">Украинский</a></li>
@@ -29,66 +27,81 @@
             </div>
         </header>
 
-        <div class="clearfix"></div>
-
         <main class="main">
-            <div class="sociality-web ">
-                <a href="https://www.facebook.com/" class="btn  Facebook face-link">
-                    <i class="sprits sprite-F latter-btn"></i>
-                    <p class="btn-txt">Sign in via Facebook</p>
-                </a>
-                <a href="https://twitter.com/?lang=ru" class="btn  Twitter face-link">
-                    <i class="sprits sprite-T latter-btn"></i>
-                    <p class="btn-txt">Sign in via Twitter</p>
-                </a>
-                <a href="https://plus.google.com/collections/featured" class="btn  Google face-link">
-                    <i class=" sprits sprite-G latter-btn"></i>
-                    <p class="btn-txt">Sign in via Google+</p>
-                </a>
+            <div class="sociality-web">
+                <a href="https://www.facebook.com/" class="btn Facebook face-link btn-txt">
+                    <i class="sprits sprite-F latter-btn"></i> Sign in via Facebook</a>
+                <a href="https://twitter.com/?lang=ru" class="btn Twitter face-link btn-txt">
+                    <i class="sprits sprite-T latter-btn"></i> Sign in via Twitter</a>
+                <a href="https://plus.google.com/collections/featured" class="btn Google face-link btn-txt">
+                    <i class=" sprits sprite-G latter-btn"></i> Sign in via Google+</a>
             </div>
 
-            <div class="clearfix"></div>
 
             <div class="text-content">
                 <p class="text-about text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
 
-            <div class="clearfix"></div>
 
             <div class="t-phone">
                 <div class="markets">
                     <a href="#" class="btn btn-link sprits sprite-win_market microsoft-market" disabled></a>
-                    <a href="http://www.apple.com/itunes/ " target="_blank" class="btn btn-link sprits sprite-app_store apple-store "></a>
                     <a href="https://play.google.com/store?hl=ru" target="_blank" class="btn btn-link sprits sprite-play_mark google-play"></a>
+                    <a href="http://www.apple.com/itunes/ " target="_blank" class="btn btn-link sprits sprite-app_store apple-store "></a>
+
                 </div>
+            </div>
+            <div id="slider" class="carousel slide" data-ride="carousel" data-interval="3500">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="https://play.google.com/store?hl=ru" target="_blank" class="btn btn-link sprits sprite-play_mark google-play"></a>
+                        <i class="android"></i>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.apple.com/itunes/ " target="_blank" class="btn btn-link sprits sprite-app_store apple-store "></a>
+                        <i class="apple"></i>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-link sprits sprite-win_market microsoft-market" disabled></a>
+                        <i class="windows"></i>
+                        <div class="carousel-caption">
+                            <p class="soon-add">coming <br>soon!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#slider" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#slider" class="right carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
         </main>
     </div>
 
-    <div class="clearfix"></div>
 
     <footer>
         <div class="container-fluid">
-            <div class="row">
-                <div class="How-it_work col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 ">
-                    <p class="question">How does it work?</p>
-                    <div class="answers">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 ">
-                                <i class="sprits sprite-ibeacon img"></i>
-                                <p class="head-answer">iBeacon</p>
-                                <p class="answers-text">Its tiny computer that broadcast radio signals that can be recive by all smart devices in range.</p>
-                            </div>
-                            <div class="col-lg-4 col-md-4 ">
-                                <i class="sprits sprite-explore img"></i>
-                                <p class="head-answer">Explore</p>
-                                <p class="answers-text">View all data (company name, description, contacts etc.) that linked to near beacons</p>
-                            </div>
-                            <div class="col-lg-4 col-md-4">
-                                <i class="sprits sprite-share img"></i>
-                                <p class="head-answer">Share</p>
-                                <p class="answers-text">Create your own info cards and link it to beacon, or even use your smart device as beacon.</p>
-                            </div>
+
+            <div class="How-it_work col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 ">
+                <p class="question">How does it work?</p>
+                <div class="answers">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 ">
+                            <i class="sprits sprite-ibeacon img"></i>
+                            <p class="head-answer">iBeacon</p>
+                            <p class="answers-text">Its tiny computer that broadcast radio signals that can be recive by all smart devices in range.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 ">
+                            <i class="sprits sprite-explore img"></i>
+                            <p class="head-answer">Explore</p>
+                            <p class="answers-text">View all data (company name, description, contacts etc.) that linked to near beacons</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <i class="sprits sprite-share img"></i>
+                            <p class="head-answer">Share</p>
+                            <p class="answers-text">Create your own info cards and link it to beacon, or even use your smart device as beacon.</p>
                         </div>
                     </div>
                 </div>
@@ -96,8 +109,6 @@
         </div>
     </footer>
 
-    <div class="sprits">
-    </div>
     <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
