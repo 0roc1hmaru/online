@@ -77,8 +77,9 @@ p {
 }
 
 .leng {
-    width: 100px;
+    width: 90px;
     height: 40px;
+    margin-right: 20px;
     border: 1px solid gray;
     border-radius: 30px;
     background-color: #243274;
@@ -88,14 +89,33 @@ p {
     font-family: 'helvetican-neue_light';
 }
 
+.dropdown-menu>li>a:hover {
+    color: #aeb3cb;
+    background: none;
+}
+
 .dropdown {
     float: right;
     margin: -50px 0 0 0;
 }
 
-.lenguage {
-    font-family: 'helvetica-neue'
+.dropdown-menu {
+    border-radius: 20px;
 }
+
+.dropdown-menu {
+    margin: -40px -10px;
+}
+
+.lenguage {
+    font-family: 'helvetica-neue';
+    margin: 11px auto;
+    font-size: 14px;
+    line-height: 5.143;
+}
+/*.lenguage:hover{
+    color: gray;
+}*/
 
 .arrow-dw {
     display: inline-block;
@@ -259,10 +279,6 @@ p {
     margin-top: 20px;
 }
 
-.dropdown-menu {
-    margin: 3px 10px;
-}
-
 .sprits {
     background-image: url(../image/spritesheet%20.png);
     background-repeat: no-repeat;
@@ -424,25 +440,19 @@ p {
 }
 
 @media(max-width:767px) {
-    /* .markets {
-        top: 20px;
-        width: auto;
-        display: block;
-    }*/
+
     .face-link {
         display: block;
         margin: 0 auto 25px;
     }
     .t-phone {
         width: auto;
-        /*   background: none;*/
         padding-bottom: 20px;
     }
     .google-play,
     .apple-store,
     .microsoft-market {
         display: block;
-        /* float: none;*/
         padding: 40px auto 40px;
     }
     .apple-store {
@@ -516,21 +526,20 @@ p {
         font-style: bold;
         text-align: center;
     }
-    .carousel-caption{
+    .carousel-caption {
         bottom: 45px;
     }
 }
-
-}
 @media(max-width:425px) {
     .dropdown {
-        margin: 20px 0 0 0;
-        float: none;
+       margin: 0 auto;
+        float:none;
         text-align: center;
     }
-    
+    .dropdown-menu{
+            margin: -40px 130px;
+    }
     .list-item {
         text-align: center;
     }
 }
-
