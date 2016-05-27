@@ -64,8 +64,11 @@ p {
 .header {
     width: 1140px;
     margin: auto;
+    margin-top: 40px;
     padding-top: 40px;
     text-align: center;
+    background: url(../image/logo-name.png) no-repeat center center;
+    position: relative;
 }
 
 .wrapp-top {
@@ -104,7 +107,7 @@ p {
 }
 
 .dropdown-menu {
-    margin: -40px -10px;
+    margin: -48px 0px;
 }
 
 .lenguage {
@@ -113,9 +116,14 @@ p {
     font-size: 14px;
     line-height: 5.143;
 }
-/*.lenguage:hover{
-    color: gray;
-}*/
+
+@media (max-width:425px) {
+    .dropdown {
+        margin: 0 auto;
+        ;
+        float: none;
+    }
+}
 
 .arrow-dw {
     display: inline-block;
@@ -132,19 +140,25 @@ p {
     border-radius: 30px;
     margin-left: 20px;
     width: 215px;
-    line-height: 3;
+    /*line-height: 3;*/
 }
 
 .btn-txt {
-    font-family: 'Ubuntu-medium';
-    font-size: 85%;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     text-align: center;
+    font-weight: normal;
+    line-height: 33px;
+}
+
+.btn-txt:hover {
+    color: #ffffff;
 }
 
 .latter-btn {
     float: left;
-    margin: 0 15px 0 10px;
+    margin: 7px 0 0 10px;
+    `
 }
 
 .sociality-web {
@@ -173,62 +187,142 @@ p {
 }
 
 .text-content {
-    margin-top: 75px;
+    margin: 75px 0 100px 0;
 }
 
-.microsoft-market {
-    border-radius: 10px;
-    border: none;
-    position: relative;
-    margin: 0 auto;
-    float: left;
-    left: 60px;
-    top: 30px;
-}
 
-.google-play {
-    border-radius: 10px;
-    border: none;
-    z-index: 12;
-    margin: 0 auto;
-    position: relative;
-    z-index: 5;
-}
-
-.apple-store {
-    border: none;
-    border-radius: 5px;
-    z-index: 13;
-    margin: 0 auto;
-    position: relative;
-    float: right;
-    right: 60px;
-    top: 30px;
-}
-
-.carousel {
-    display: none;
-}
-
-.t-phone {
-    background: url(../image/phones.png) no-repeat bottom center;
-    background-size: contain;
-    height: 335px;
-    width: 693px;
-    display: block;
-    margin: 0 auto;
-}
+/*********************************************************************************************************/
 
 .t-phones {
     text-align: center;
-    margin: 150px 0 0 0;
+    padding: 0;
 }
 
-.markets {
-    text-align: center;
+.main .row-main-app .t-phones .ich-phone {
+    height: 365px;
+    width: 300px;
+    display: inline-block;
     position: relative;
-    margin: 90px auto 0;
+    text-align: center;
 }
+
+.windows .phone {
+    background-image: url(../image/wp_full.png);
+    background-position: center 115px;
+}
+
+.android .phone {
+    background-image: url(../image/nexus_full.png);
+    background-position: center 75px;
+    z-index: 5;
+}
+
+.apple .phone {
+    background-image: url(../image/apple_full.png);
+    background-position: right 110px;
+}
+
+.apple .phone:hover {
+    z-index: 10
+}
+
+.windows .store {
+    background: url(../image/win-market.png) no-repeat;
+}
+
+.android .store {
+    background: url(../image/play-mark.png) no-repeat;
+}
+
+.apple .store {
+    background: url(../image/app-store.png) no-repeat;
+}
+
+.ich-phone .store {
+    display: inline-block;
+    width: 130px;
+    height: 48px;
+    background-position: center top;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+}
+
+.android .store {
+    top: 0px;
+}
+
+.apple .store,
+.windows .store {
+    top: 40px;
+}
+
+.ich-phone .phone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+}
+
+.main .row-main-app .windows {
+    margin-right: -100px;
+}
+
+.main .row-main-app .ich-phone.apple {
+    margin-left: -100px;
+}
+
+@media (max-width:768px) {
+    .main .row-main-app .windows {
+        margin-right: -20%;
+    }
+    .main .row-main-app .ich-phone.apple {
+        margin-left: -20%;
+    }
+}
+
+@media (max-width:658px) {
+    .main .row-main-app .ich-phone .phone {
+        background-size: 100% auto;
+    }
+    .main .row-main-app .t-phones .ich-phone {
+        width: 50%;
+        height: 50vh;
+    }
+    .main .row-main-app .windows {
+        margin-right: -30%;
+    }
+    .main .row-main-app .ich-phone.apple {
+        margin-left: -30%;
+    }
+    .ich-phone .android .store {
+        top: 40px;
+    }
+    .apple .store {
+        left: 35px;
+    }
+    .windows .store {
+        right: 35px;
+    }
+    .ich-phone .store {
+        background-size: contain;
+        width: 50%;
+        z-index: 20;
+    }
+}
+
+@media(max-width:375px) {
+    .ich-phone .store {
+        background-size: contain;
+        width: 65%;
+        z-index: 20;
+    }
+}
+
+
+/*************************************************************************************************************/
 
 .question {
     font-family: 'Ubuntu-medium';
@@ -288,52 +382,28 @@ p {
 .sprite-F {
     width: 9px;
     height: 20px;
-    margin: 10px 0 0 10px;
+    vertical-align: middle;
     background-position: -10px -10px;
 }
 
 .sprite-T {
     width: 21px;
     height: 17px;
-    margin: 10px 0 0 10px;
+    vertical-align: middle;
     background-position: -84px -10px;
 }
 
 .sprite-G {
     width: 25px;
     height: 16px;
-    margin: 10px 0 0 10px;
+    vertical-align: middle;
     background-position: -39px -10px;
-}
-
-.sprite-logo_name {
-    width: 151px;
-    height: 42px;
-    background-position: -1079px -10px;
 }
 
 .sprite-arrow_donw {
     width: 8px;
     height: 4px;
     background-position: -275px -10px;
-}
-
-.sprite-win_market {
-    width: 116px;
-    height: 42px;
-    background-position: -2263px -10px;
-}
-
-.sprite-play_mark {
-    width: 130px;
-    height: 38px;
-    background-position: -1873px -10px;
-}
-
-.sprite-app_store {
-    width: 130px;
-    height: 38px;
-    background-position: -125px -10px;
 }
 
 .sprite-ibeacon {
@@ -354,77 +424,10 @@ p {
     background-position: -2023px -10px;
 }
 
-.sprite-nexus6 {
-    width: 307px;
-    height: 560px;
-    background-position: -1250px -10px;
-    z-index: 20;
-}
-
-.sprite-nokia_opasity {
-    width: 276px;
-    height: 507px;
-    background-position: -1577px -10px;
-    z-index: 19;
-    margin-top: 40px;
-}
-
-.sprite-aplle {
-    width: 307px;
-    height: 545px;
-    background-position: -752px -10px;
-    z-index: 19;
-    margin-top: 40px;
-}
-
-.sprite-t_phone {
-    background-image: url(../image/t-phone.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-iphone {
-    width: 240px;
-    height: 248px;
-    background-position: -5px -5px;
-    display: inline-block;
-    position: relative;
-    right: 35px;
-    z-index: 1;
-    top: 47px;
-}
-
-.sprite-nexus_6 {
-    width: 281px;
-    height: 284px;
-    background-position: -255px -5px;
-    display: inline-block;
-    z-index: 5;
-    position: relative;
-}
-
-.sprite-wp {
-    width: 254px;
-    height: 239px;
-    background-position: -546px -5px;
-    display: inline-block;
-    position: relative;
-    left: 55px;
-    z-index: 1;
-    top: 47px;
-}
-
-
-/*.sprite-wp:hover*/
-
-.sprite-iphone:hover {
-    z-index: 10;
-}
-
 @media(max-width:1200px) {
     .header,
     .main {
-        width: 1000px;
+        width: 950px;
     }
 }
 
@@ -435,12 +438,11 @@ p {
         padding: 0 20px;
     }
     .header {
-        padding-top: 40px;
+        padding-top: 50px;
     }
 }
 
 @media(max-width:767px) {
-
     .face-link {
         display: block;
         margin: 0 auto 25px;
@@ -448,15 +450,6 @@ p {
     .t-phone {
         width: auto;
         padding-bottom: 20px;
-    }
-    .google-play,
-    .apple-store,
-    .microsoft-market {
-        display: block;
-        padding: 40px auto 40px;
-    }
-    .apple-store {
-        top: 0;
     }
     .text-content {
         margin-top: 20px
@@ -466,80 +459,22 @@ p {
     }
 }
 
-@media (max-width:550px) {
-    .t-phone {
-        display: none;
-    }
-    .android {
-        background: url(../image/nexus_6.png) no-repeat bottom center;
-        height: 284px;
-        width: 281px;
-        display: block;
-        margin: 0 auto;
-    }
-    .google-play {
-        margin: 20px auto;
-    }
-    .apple {
-        background: url(../image/iphone.png) no-repeat bottom center;
-        height: 284px;
-        width: 240px;
-        display: block;
-        margin: 0 auto;
-    }
-    .windows {
-        background: url(../image/wp.png) no-repeat bottom center;
-        display: block;
-        margin: 0 auto;
-        height: 284px;
-        width: 254px;
-    }
-    .apple-store {
-        margin: 0 auto;
-        position: relative;
-        float: none;
-        margin: 20px auto;
-        right: 0;
-        /*right: 60px;
-        top: 30px;*/
-    }
-    .microsoft-market {
-        position: relative;
-        margin: 20px auto;
-        float: none;
-        left: 0;
-        /*top: 30px;*/
-    }
-    .carousel {
-        display: block;
-    }
-    .carousel-control.right,
-    .carousel-control.left {
-        background-image: none;
-    }
-    .soon-add {
-        font-size: 24px;
-        font-family: 'helvetica-neue_bold';
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        line-height: 1.25;
-        font-style: bold;
-        text-align: center;
-    }
-    .carousel-caption {
-        bottom: 45px;
-    }
-}
 @media(max-width:425px) {
-    .dropdown {
-       margin: 0 auto;
-        float:none;
-        text-align: center;
+    .header {
+        margin: 40px;
     }
-    .dropdown-menu{
-            margin: -40px 130px;
+    .dropdown {
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        float: right;
+    }
+    .dropdown-menu {
+        margin: -48px 0%;
+        
     }
     .list-item {
         text-align: center;
     }
 }
+
